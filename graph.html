@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Sensor Graphs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+
+        .graph-container {
+            position: absolute;
+            width: 50%; /* Each graph takes up half the width */
+            height: 50%; /* Each graph takes up half the height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right{
+            bottom: 0;
+            right: 0;
+        }
+
+        canvas {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    </style>
+</head>
+<body>
+    <div class="graph-container top-left">
+        <canvas id="waterFlowChart"></canvas>
+    </div>
+    <div class="graph-container top-right">
+        <canvas id="pressureChart"></canvas>
+    </div>
+    <div class="graph-container bottom-left">
+        <canvas id="temperatureChart"></canvas>
+    </div>
+    <script src="graph.js"></script>
+</body>
+</html>

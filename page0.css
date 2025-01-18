@@ -1,0 +1,64 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bimgcon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.backgroundimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(85%);
+}
+
+.title {
+  position: absolute;
+  font-size: 110px;
+  font-style: oblique;
+  top: 28%;
+  left: 32%;
+  color: rgb(204, 196, 216);
+  font-weight: bold;
+  z-index: 1;
+}
+.start {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  top: 58%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: #ffffff;
+  background-color: #040706; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  text-decoration: none; 
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start:hover {
+  background-color: #ffffff;
+  color:black;
+  
+}
+
+.start:active {
+  background-color: #010100;
+ 
+}
+
+
+
